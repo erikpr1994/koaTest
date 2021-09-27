@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <h2>{{ countryDay?.countryName }}</h2>
+  <div class="day-name">
+    <p>{{ countryDay?.date }}</p>
+    <p>{{ (countryDay?.names)![0] }}</p>
+  </div>
+  <mat-icon
+    *ngIf="(countryDay?.names)!.length > 1"
+    aria-hidden="false"
+    aria-label="Example info icon"
+    class="icon"
+    matTooltip="There's more than one name"
+    >info</mat-icon
+  >
+</div>
